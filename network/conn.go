@@ -84,7 +84,7 @@ func convertEncryptKey(keyText string) ([32]byte, error) {
 	return keyInByte, nil
 }
 
-// GenPort -
+// GenPort generate random port
 func GenPort() string {
 	return ":" + strconv.Itoa(rand.Intn(65535-10000)+10000)
 }
